@@ -2,7 +2,7 @@
 function Home(){
 return(
   <>
-  <div className="bg-indigo-900 w-screen flex justify-center">
+  <div className="bg-indigo-900 w-screen flex justify-center ">
      <div className=" container grid grid-cols-2 text-white">
         <div className=" gap-4 flex flex-col items-center  justify-center py-4">
           <h2 className=" text-5xl font-bold">Seja Bem Vindo!</h2>
@@ -18,8 +18,8 @@ return(
           width="400px"
           />
         </div>   
-     </div>
-  </div>
+     </div> 
+  </div> 
   </>
 );
 }

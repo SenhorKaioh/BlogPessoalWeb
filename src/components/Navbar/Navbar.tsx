@@ -1,7 +1,7 @@
-function Header(){  
+function Navbar(){  
     return(
         <>
-        <header>
+        <nav>
          <div className="bg-indigo-900 flex items-center gap-4 text-white justify-center py-2">
             <div className="container grid grid-cols-2 flex justify-between text-lg">
             <div className="text-2xl font-bold uppercase">BLOG PESSOAL</div>
@@ -17,7 +17,7 @@ function Header(){
             </div>
            </div>
          </div>
-         </header>
+         </nav>
         </>
 );
 }

@@ -1,5 +1,5 @@
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/footer/Footer';
-import Header from './components/header/Header';
 import Home from './paginas/home/Home';
 
 
@@ -7,7 +7,7 @@ import Home from './paginas/home/Home';
 function App() {
   return (
     <div>
-        <Header />
+        <Navbar/>
       <Home />
       <Footer />
     </div>

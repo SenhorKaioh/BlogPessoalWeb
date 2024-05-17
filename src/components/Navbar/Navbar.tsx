@@ -22,4 +22,4 @@ function Navbar(){
 );
 }
     
-export default Header;
+export default Navbar;

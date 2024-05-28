@@ -5,6 +5,7 @@ import Tema from "../../../models/Tema";
 import CardTemas from "../cardtemas/CardTemas";
 import { buscar } from "../../../service/Service";
 import { DNA } from "react-loader-spinner";
+import { ToastAlerta } from "../../../utils/ToastAlerta";
 
 function ListaTemas() {
 
@@ -23,7 +24,7 @@ function ListaTemas() {
             })
         } catch (error: any) {
             if (error.toString().includes('401')) {
-                alert('O token expirou!')
+                ToastAlerta('O token expirou! Logue novamente.' , 'info')
                 handleLogout()
             }
         }
@@ -31,7 +32,7 @@ function ListaTemas() {
 
     useEffect(() => {
         if (token === '') {
-            //alert('Você precisa estar logado!')
+            ToastAlerta('Você precisa estar logado', 'info')
             navigate('/')
         }
     }, [token])

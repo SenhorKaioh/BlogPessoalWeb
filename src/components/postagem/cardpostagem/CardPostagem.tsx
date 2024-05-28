@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom"
-import Postagem from "../../../models/Postagem"
+﻿import { Link } from 'react-router-dom'
+import Postagem from '../../../models/Postagem'
 
 interface CardPostagensProps {
     postagem: Postagem
@@ -31,12 +31,12 @@ function CardPostagem({ postagem }: CardPostagensProps) {
                 </div>
             </div>
             <div className="flex">
-                <Link to='' 
+                <Link to={`/editarpostagem/${postagem.id}`} 
                     className='w-full text-white bg-indigo-400 
                     hover:bg-indigo-800 flex items-center justify-center py-2'>
                     <button>Editar</button>
                 </Link>
-                <Link to='' 
+                <Link to={`/deletarpostagem/${postagem.id}`} 
                     className='text-white bg-red-400 
                     hover:bg-red-700 w-full flex items-center justify-center'>
                     <button>Deletar</button>
@@ -46,4 +46,4 @@ function CardPostagem({ postagem }: CardPostagensProps) {
     )
 }
 
-export default CardPostagem
+export default CardPostagem 

@@ -8,6 +8,8 @@ function Footer(){
 
 let data = new Date().getFullYear()
 
+let component
+
     return(
 <>
 <footer className="bg-indigo-900 text-white py-6">

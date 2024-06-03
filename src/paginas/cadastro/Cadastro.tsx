@@ -19,7 +19,7 @@ function Cadastro() {
   * Definimos um estado chamado isLoading, do tipo boolean, através do 
   * Hook UseState, com o valor inicial false. 
   * Este estado será utilizado para armazenar um valor do tipo boolean, 
-  * auxiliando no processo de confirmação se uma determinada ação foi 
+  * auxiliando no processo de confirmação se uma determinada ação foi yarn
   * finalizada (false) ou não (true). 
   * Para atualizar o estado da variável isLoading, foi criada a 
   * função setIsLoading.

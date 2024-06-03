@@ -2,14 +2,16 @@ import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import FormPostagem from "../formpostagem/FormPostagem";
 
+import './ModalPostagem.css'
+
 function ModalPostagem() {
   return (
     <>
-      <Popup
+      <Popup className="rounded-sm"
         trigger={
-          <button className="rounded-sm border-2 border-solid border-white px-4 py-2 font-bold 
+          <button className="rounded border border-solid border-white px-4 py-2 font-bold 
            text-white transition-colors hover:bg-white hover:text-indigo-900 focus-visible:bg-white
-            focus-visible:text-indigo-900 border">
+            focus-visible:text-indigo-900 ">
             Nova Postagem
           </button>
         }

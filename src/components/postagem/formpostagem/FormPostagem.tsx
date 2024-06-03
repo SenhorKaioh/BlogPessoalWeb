@@ -149,12 +149,12 @@ function FormPostagem() {
   const carregandoTema = tema.descricao === '';
 
   return (
-      <div className="container flex flex-col mx-auto items-center rounded-sm ">
+      <div className="container flex flex-col mx-auto items-center ">
           <h1 className="text-4xl text-center my-8">
               {id !== undefined ? 'Editar Postagem' : 'Cadastrar Postagem'}
           </h1>
 
-          <form className="flex flex-col w-1/2 gap-4" onSubmit={gerarNovaPostagem}>
+          <form className="flex flex-col w-1/2 gap-4 " onSubmit={gerarNovaPostagem}>
               <div className="flex flex-col gap-2">
                   <label htmlFor="titulo">Título da Postagem</label>
                   <input

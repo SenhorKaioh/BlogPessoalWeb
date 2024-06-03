@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { RotatingLines } from 'react-loader-spinner';
 import { cadastrarUsuario } from '../../service/Service';
 import { ToastAlerta } from '../../utils/ToastAlerta';
+import './Cadastro.css'
 
 function Cadastro() {
 
